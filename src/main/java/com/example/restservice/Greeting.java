@@ -1,7 +1,9 @@
 package com.example.restservice;
 
-public class Greeting {
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
+public class Greeting {
+    @JsonIgnore
 	private final long id;
 	private final String content;
 
